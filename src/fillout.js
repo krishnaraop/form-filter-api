@@ -58,9 +58,9 @@ app.get('/:formId/filteredResponses', async (req, res) => {
   }
 });
 
-app.get('/', async (req,res)=>{
-  res.send("working!")
+app.get('/', (req,res)=>{
+  res.send("yes,working!")
 })
 app.listen(port, () => {
-  console.log(`Filtered responses server listening at http://localhost:${port}`);
+  console.log(`server listening at ${port}`);
 });
